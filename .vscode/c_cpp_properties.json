@@ -3,7 +3,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "C:/Program Files/OpenSSL-Win64/include"  // Đường dẫn thư mục include
             ],
             "defines": [
                 "_DEBUG",
@@ -14,7 +15,14 @@
             "compilerPath": "cl.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64"
+            "intelliSenseMode": "windows-msvc-x64",
+            "browse": {
+                "path": [
+                    "C:/Program Files/OpenSSL-Win64/include",  // Đường dẫn thư mục include
+                    "${workspaceFolder}/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
         }
     ],
     "version": 4

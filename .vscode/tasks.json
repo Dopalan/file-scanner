@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build file-scanner",
+            "type": "shell",
+            "command": "cl.exe",
+            "args": [
+                "/EHsc",
+                "/I", "C:/Program Files/OpenSSL-Win64/include", 
+                "/link",
+                "/LIBPATH:C:/Program Files/OpenSSL-Win64/lib", 
+                "ssl.lib",  
+                "crypto.lib", 
+                "src/main.cpp",  
+                "/out:file-scanner.exe" 
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
