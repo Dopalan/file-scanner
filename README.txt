@@ -1,6 +1,6 @@
 # 🔍 File Scanner - Malware Hash Checker
 
-Một công cụ C++ đơn giản giúp quét thư mục và kiểm tra các tệp có trùng với danh sách hash độc hại. Dự án này giúp bạn luyện tập lập trình hướng đối tượng, xử lý file hệ thống, và tích hợp tính năng bảo mật cơ bản bằng cách sử dụng SHA-256.
+Một công cụ C++ đơn giản giúp quét thư mục và kiểm tra các tệp có trùng với danh sách hash độc hại, sau đó mã hóa và chuyển đến thư mục riêng
 
 ---
 
@@ -10,6 +10,7 @@ Một công cụ C++ đơn giản giúp quét thư mục và kiểm tra các t�
 - Tính toán hash SHA-256 cho từng tệp
 - So sánh hash với danh sách "blacklist" có sẵn
 - In thông báo nếu phát hiện file nghi ngờ
+- Mã hóa và chuyển file đến thư mục
 
 ---
 
@@ -35,5 +36,5 @@ file-scanner/
 ## 📦 Yêu cầu
 
 - C++17 trở lên
-- Thư viện OpenSSL (để tính toán SHA-256)
+- Thư viện OpenSSL
 
